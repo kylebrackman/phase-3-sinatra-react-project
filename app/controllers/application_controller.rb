@@ -6,4 +6,13 @@ class ApplicationController < Sinatra::Base
     { message: "test!" }.to_json
   end
 
+  get "/users" do 
+    users = User.all
+    users.to_json
+  end
+  get "/items" do 
+    items = Item.all
+    items.to_json
+  end
+
 end

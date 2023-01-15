@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2023_01_15_213920) do
     t.string "item_name"
     t.string "item_description"
     t.string "item_review"
-    t.string "user_id"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
