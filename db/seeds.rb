@@ -14,7 +14,7 @@ User.create(username: "Hayden")
 
 User.all.each do |user|
     rand(2..5).times do
-        Review.create(item_name: item_names.sample, item_rating: rand(1..10), item_review: item_reviews.sample, user_id: user.id)
+        Review.create(item_name: item_names.sample, item_rating: rand(1..10), item_review: item_reviews.sample, user_id: user.id, username: user.username)
     end
 end
 
