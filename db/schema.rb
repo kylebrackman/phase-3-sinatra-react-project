@@ -12,10 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2023_01_15_213920) do
 
-  create_table "items", force: :cascade do |t|
+  create_table "reviews", force: :cascade do |t|
     t.string "item_name"
-    t.string "item_description"
     t.string "item_review"
+    t.integer "item_rating"
     t.integer "user_id"
   end
 

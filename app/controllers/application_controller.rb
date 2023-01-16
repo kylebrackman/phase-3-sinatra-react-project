@@ -8,11 +8,12 @@ class ApplicationController < Sinatra::Base
 
   get "/users" do 
     users = User.all
-    users.to_json
+    users.to_json(include: :reviews)
   end
-  get "/items" do 
-    items = Item.all
-    items.to_json
+
+  get "/reviews" do 
+    reviews = Review.all
+    reviews.to_json
   end
 
 end
