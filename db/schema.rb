@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2023_01_15_213920) do
     t.string "username"
     t.integer "item_rating"
     t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
